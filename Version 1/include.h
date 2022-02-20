@@ -23,7 +23,7 @@
 #include "Cast/Image/PatternInfo.h"
 #include "Cast/Image/FontInfo.h"
 #include "Cast/Image/ImageCast.h"
-#include "Cast/Image/ImageCell.h"
+#include "Cast/Cell.h"
 #include "Cast/CastNode.h"
 
 // Animations

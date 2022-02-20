@@ -24,14 +24,7 @@ typedef struct {
 
             local int i;
             for (i = 0; i < CastCellCount; i++)
-			{
-				switch (Casts[i].Flags & 0xF)
-				{
-					case 1:
-						SRS_IMAGE_CELL Cells(Casts[i].Name.Name);
-						break;
-				}
-			}
+				SRS_CELL Cells(Casts[i].Name.Name);
         }
     }
     if (AnimationOffset && AnimationCount)

@@ -17,4 +17,4 @@ typedef struct (string name){
     float field_10;
     uint Rotation;
     SRS_VECTOR3 Scale;
-} SRS_IMAGE_CELL<optimize=false, read=Name>;
+} SRS_CELL<optimize=false, read=Name>;
