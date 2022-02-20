@@ -10,6 +10,8 @@ typedef struct (uint Flags){
             break;
         case 0x40:
             int Value;
+            float TangentIn;
+            float TangentOut;
             break;
         case 0x60:
             uint Value;
