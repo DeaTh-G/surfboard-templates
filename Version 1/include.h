@@ -19,10 +19,17 @@
 #include "Font/FontMapping.h"
 #include "Font/FontList.h"
 
-// Cast
+// Image Cast
 #include "Cast/Image/PatternInfo.h"
 #include "Cast/Image/FontInfo.h"
 #include "Cast/Image/ImageCast.h"
+
+// Slice Cast
+#include "Cast/Slice/Slice.h"
+#include "Cast/Slice/SliceInfo.h"
+#include "Cast/Slice/SliceCast.h"
+
+// Cast
 #include "Cast/Cell.h"
 #include "Cast/CastNode.h"
 

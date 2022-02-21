@@ -17,6 +17,9 @@ typedef struct {
             case 1: 
                 SRS_IMAGE_CAST ImageCast;
                 break;
+            case 2: 
+                SRS_SLICE_CAST SliceCast;
+                break;
         }
     } FSeek(p);
 } SRS_CASTNODE<optimize=false, read=Name.Name>;
