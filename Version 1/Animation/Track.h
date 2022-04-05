@@ -10,6 +10,15 @@ enum <ushort> SRS_ANIMATION_TYPE
     YScale,
     ZScale,
     MaterialColor,
+	Unknown1,
+	Unknown2, // SurfRide::DirtyFlag::SetCellVertices
+	Unknown3, // SurfRide::DirtyFlag::SetCellVertices
+	Unknown4, // SurfRide::DirtyFlag::SetCellVertexColor
+	Unknown5, // SurfRide::DirtyFlag::SetCellVertexColor
+	Unknown6, // SurfRide::DirtyFlag::SetCellVertexColor
+	Unknown7, // SurfRide::DirtyFlag::SetCellVertexColor
+	Unknown8, // SurfRide::DirtyFlag::SetCellCropUV
+	Unknown9, // SurfRide::DirtyFlag::SetCellCropUV
     IlluminationColor = 20,
     MaterialColorRed,
     MaterialColorGreen,
