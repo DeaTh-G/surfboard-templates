@@ -1,0 +1,29 @@
+//------------------------------------------------
+//--- 010 Editor v12.0.1 Binary Template
+//
+//      File: SWIF.bt
+//   Authors: ĐeäTh
+//   Version: 1.0.0
+//   Purpose: Parse SWIF files.
+//  Category: Puyo Puyo Tetris
+//------------------------------------------------
+
+#include "include.h"
+
+// Info Chunk
+SRS_INFO_CHUNK InfoChunk;
+
+// Texture List / Project Chunk
+FSeek(InfoChunk.NextChunkOffset);
+if (InfoChunk.ChunkCount >= 2)
+    SRS_TEXTURE_LIST_CHUNK TextureListChunk;
+
+if (InfoChunk.ChunkCount >= 1)
+    SRS_PROJECT_CHUNK ProjectChunk;
+
+// Offset Chunk
+FSeek(InfoChunk.OffsetChunkOffset);
+SRS_OFFSET_CHUNK OffsetChunk;
+
+// End Chunk
+SRS_END_CHUNK EndChunk;

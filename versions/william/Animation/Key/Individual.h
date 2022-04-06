@@ -1,6 +1,6 @@
 typedef struct (uint Flags){
     uint Keyframe;
-
+	
     switch (Flags & 0xF0)
     {
         case 0x10:
