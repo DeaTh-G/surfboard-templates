@@ -1,5 +1,5 @@
 // Generics
-#include "../utils/StringPtr.h"
+#include "../../utils/StringPtr.h"
 
 // Types
 #include "types/Math.h"
@@ -11,8 +11,6 @@
 #include "Texture/Texture.h"
 #include "Texture/TextureList.h"
 #include "Texture/TextureListChunk.h"
-#include "Texture/TextureData.h"
-#include "Texture/TextureDataChunk.h"
 
 // Camera
 #include "Project/Camera.h"
