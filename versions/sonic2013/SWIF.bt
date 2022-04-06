@@ -5,7 +5,7 @@
 //   Authors: ĐeäTh
 //   Version: 1.0.0
 //   Purpose: Parse SWIF files.
-//  Category: Sonic Lost World / Puyo Puyo Tetris 3Ds
+//  Category: Sonic Lost World
 //------------------------------------------------
 
 #include "include.h"
