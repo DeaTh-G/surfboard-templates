@@ -3,7 +3,7 @@ typedef struct (uint offset) {
 	
 	p = FTell();
 	
-    FSeek(NameOffset); string Name;
+    FSeek(offset); string Name;
 
 	FSeek(p); 
 } StringPtr<read=Name>;
