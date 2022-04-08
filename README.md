@@ -7,5 +7,5 @@
 ### urals - Mario and Sonic at the Sochi 2014 Olympic Winter Games
 ### puyopuyotetris - Puyo Puyo Tetris
 ### unison - Mario and Sonic at the Rio 2016 Olympic Games
-### ad24 - Puyo Puyo Chronicle
+### AD24 - Puyo Puyo Chronicle
 ### wars - Sonic Forces (INCOMPLETE)
