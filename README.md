@@ -10,5 +10,11 @@
 ### AD24 - Puyo Puyo Chronicle
 ### es24 - Puyo Puyo Champions
 
-### Partially Supported Versions
+## Partially Supported Versions
 ### wars - Sonic Forces
+
+## Unsupported Versions
+### musashi - Olympic Games Tokyo 2020 - The Official Video Game
+### rings - Mario and Sonic at the Tokyo 2020 Olympic Games
+### arukas - Sakura Wars (2019)
+### tenpex - Puyo Puyo Tetris 2
