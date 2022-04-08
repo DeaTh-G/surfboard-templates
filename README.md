@@ -9,3 +9,4 @@
 ### unison - Mario and Sonic at the Rio 2016 Olympic Games
 ### AD24 - Puyo Puyo Chronicle
 ### wars - Sonic Forces (INCOMPLETE)
+### es24 - Puyo Puyo Champions
