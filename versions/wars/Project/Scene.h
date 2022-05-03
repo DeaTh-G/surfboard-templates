@@ -14,6 +14,7 @@ typedef struct {
     uint64 CameraOffset;
     SRS_COLOR BackgroundColor; // Always 0x4444CCFF
     SRS_VECTOR2 FrameSize;
+    uint field_3C;
     uint64 UserDataOffset; p = FTell();
     if (LayerOffset && LayerCount)
     {
