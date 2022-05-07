@@ -5,7 +5,8 @@
 //   Authors: ĐeäTh
 //   Version: 1.0.0
 //   Purpose: Parse SWIF files.
-//  Category: Puyo Puyo Tetris
+//   Supported Games:
+//     - Puyo Puyo Tetris (Nintendo Switch, PC, PlayStation 4, Xbox One)
 //------------------------------------------------
 
 #include "include.h"
@@ -19,7 +20,7 @@ if (InfoChunk.ChunkCount >= 2)
     SRS_TEXTURE_LIST_CHUNK TextureListChunk;
 
 if (InfoChunk.ChunkCount >= 1)
-    SRS_PROJECT_CHUNK ProjectChunk;
+    SRS_PROJECT_CHUNK ProjectChunk(2);
 
 // Offset Chunk
 FSeek(InfoChunk.OffsetChunkOffset);

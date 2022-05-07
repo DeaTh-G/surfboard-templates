@@ -1,4 +1,4 @@
-typedef struct {
+typedef struct (uint version) {
 	local uint64 p<hidden=true>;
 
 	uint64 NameOffset;
@@ -10,8 +10,8 @@ typedef struct {
     uint64 CellOffset;
     uint64 AnimationCount;
     uint64 AnimationOffset;
-    uint64 field_20;
-    uint64 field_24; p = FTell();
+    uint64 field_38;
+    uint64 field_40; p = FTell();
     if (CastCellCount)
     {
         if (CastOffset)
@@ -24,11 +24,14 @@ typedef struct {
 
             local int i;
             for (i = 0; i < CastCellCount; i++)
-				SRS_CELL Cells(Casts[i].Name.Name);
+                if ((Flags & 0xF) == 1)
+				    SRS_CELL3D Cells(Casts[i].Name.Name);
+                else
+				    SRS_CELL Cells(Casts[i].Name.Name);
         }
     }
     if (AnimationOffset && AnimationCount)
     {
-        FSeek(AnimationOffset); SRS_ANIMATION Animations[AnimationCount];
+        FSeek(AnimationOffset); SRS_ANIMATION Animations(version)[AnimationCount];
     } FSeek(p);
 } SRS_LAYER<optimize=false, read=Name.Name>;

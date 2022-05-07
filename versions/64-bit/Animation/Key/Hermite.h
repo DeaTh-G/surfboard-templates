@@ -5,13 +5,9 @@ typedef struct (uint Flags){
     {
         case 0x10:
             float Value;
-            float TangentIn;
-            float TangentOut;
             break;
         case 0x40:
             int Value;
-            float TangentIn;
-            float TangentOut;
             break;
         case 0x60:
             uint Value;
@@ -20,4 +16,7 @@ typedef struct (uint Flags){
             double Value;
             break;
     }
+
+    float TangentIn;
+    float TangentOut;
 } SRS_KEYHERMITE<optimize=false>;

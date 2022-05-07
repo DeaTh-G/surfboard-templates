@@ -11,12 +11,14 @@ typedef struct {
     SRS_COLOR GradientBottomRight;
     short field_24;
     short field_26;
-    uint64 PatternInfoCount;
+    ushort PatternInfoCount;
+    ushort field_2A;
+    uint field_2C;
     uint64 PatternInfoOffset;
-    uint64 field_30;
+    uint64 offset_38;
     uint64 FontInfoOffset;
-    uint64 field_38;
-    uint64 field_3C; p = FTell();
+    uint64 field_48;
+    uint64 offset_50; p = FTell();
     if (PatternInfoCount && PatternInfoOffset)
     {
         FSeek(PatternInfoOffset); SRS_PATTERN_INFO PatternInfo[PatternInfoCount];

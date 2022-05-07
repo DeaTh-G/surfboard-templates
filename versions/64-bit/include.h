@@ -7,17 +7,14 @@
 #include "types/ChunkHeader.h"
 
 // Texture
-#include "Texture/SubImage.h"
 #include "Texture/Texture.h"
-#include "Texture/TextureList.h"
 #include "Texture/TextureListChunk.h"
 
 // Camera
 #include "Project/Camera.h"
 
 // Font
-#include "Font/FontMapping.h"
-#include "Font/FontList.h"
+#include "Project/Font.h"
 
 // Image Cast
 #include "Cast/Image/PatternInfo.h"
@@ -31,6 +28,8 @@
 
 // Cast
 #include "Cast/Cell.h"
+#include "Cast/Cell3D.h"
+#include "Cast/CastUserData.h"
 #include "Cast/CastNode.h"
 
 // Animations
@@ -47,7 +46,6 @@
 #include "Project/Scene.h"
 
 // Project
-#include "Project/Project.h"
 #include "Project/ProjectChunk.h"
 
 // Info

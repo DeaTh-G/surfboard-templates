@@ -3,7 +3,7 @@ typedef struct {
 
     ushort CastID;
     ushort TrackCount;
-	uint field_04;
+    uint field_04;
     uint64 TrackOffset; p = FTell();
     if (TrackCount && TrackOffset)
     {

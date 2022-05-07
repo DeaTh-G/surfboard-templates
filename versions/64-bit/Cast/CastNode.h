@@ -22,5 +22,9 @@ typedef struct {
                 SRS_SLICE_CAST SliceCast;
                 break;
         }
-    } FSeek(p);
+    } 
+	if (UserDataOffset)
+	{
+		FSeek(UserDataOffset); SRS_CAST_USER_DATA UserData;
+	} FSeek(p);
 } SRS_CASTNODE<optimize=false, read=Name.Name>;

@@ -3,19 +3,20 @@ typedef struct {
 
     uint field_00;
     uint FontListIndex;
-    uint CharacterListOffset;
+    uint64 CharacterListOffset;
     SRS_VECTOR2 Scale;
-    uint field_14;
     uint field_18;
+    uint field_1C;
     short FontSpacing;
-    ushort field_1E;
-    uint FontListOffset; p = FTell();
+    ushort field_22;
+    uint field_24;
+    uint64 FontOffset; p = FTell();
     if (CharacterListOffset)
     {
         FSeek(CharacterListOffset); string Characters;
     } 
-    if (FontListOffset)
+    if (FontOffset)
     { 
-        FSeek(FontListOffset); SRS_FONT_LIST FontList;
+        FSeek(FontOffset); SRS_FONT FontList;
     } FSeek(p);
 } SRS_FONT_INFO<optimize=false>;

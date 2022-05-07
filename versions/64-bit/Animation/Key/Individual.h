@@ -5,21 +5,12 @@ typedef struct (uint Flags){
     {
         case 0x10:
             float Value;
-            float field_08;
-            float field_0C;
-            int field_10;
             break;
         case 0x20:
             int Value;
-            int field_08;
-            int field_0C;
-            int field_10;
             break;
         case 0x40:
             int Value;
-            float field_08;
-            float field_0C;
-            int field_10;
             break;
         case 0x60:
             uint Value;
@@ -28,4 +19,8 @@ typedef struct (uint Flags){
             double Value;
             break;
     }
+
+    float field_08;
+    float field_0C;
+    int field_10;
 } SRS_KEYINDIVIDUAL<optimize=false>;
