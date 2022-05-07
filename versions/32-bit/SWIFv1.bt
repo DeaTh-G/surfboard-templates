@@ -6,7 +6,8 @@
 //   Version: 1.0.0
 //   Purpose: Parse SWIF files.
 //   Supported Games:
-//     - Mario & Sonic at the London 2012 Olympic Games (Wii)
+//     - Mario & Sonic at the London 2012 Olympic Games (Nintendo Wii)
+//     - Mario & Sonic at the London 2012 Olympic Games (Nintendo 3DS)
 //------------------------------------------------
 
 #include "include.h"
