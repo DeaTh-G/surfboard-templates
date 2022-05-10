@@ -9,7 +9,7 @@ typedef struct {
     size_t LinkOffset;
     size_t UserDataOffset;
     if (VERSION >= 1)
-        size_t field_18;
+        byte IsLooping;
 
     p = FTell();
     if (LinkOffset.offset && LinkCount)
