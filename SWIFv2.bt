@@ -1,0 +1,36 @@
+//------------------------------------------------
+//--- 010 Editor v12.0.1 Binary Template
+//
+//      File: SWIF.bt
+//   Authors: ĐeäTh
+//   Version: 1.0.0
+//   Purpose: Parse SWIF files.
+//   Supported Games:
+//     - Sonic Lost World (Nintendo Wii U, PC)
+//     - Mario and Sonic at the Sochi 2014 Olympic Winter Games (Nintendo Wii U)
+//     - Puyo Puyo Tetris (Nintendo 3DS, Nintendo Wii U, PlayStation 3, PlayStation Vita?)
+//     - Mario and Sonic at the Rio 2016 Olympic Games (Nintendo Wii U, Nintendo 3DS)
+//     - Puyo Puyo Chronicle (Nintendo 3DS)
+//------------------------------------------------
+
+#include "include.h"
+
+local uint VERSION = 1;
+
+// Info Chunk
+SRS_INFO_CHUNK InfoChunk;
+
+// Texture List / Project Chunk
+FSeek(InfoChunk.NextChunkOffset);
+if (InfoChunk.ChunkCount >= 2)
+    SRS_TEXTURE_LIST_CHUNK TextureListChunk;
+
+if (InfoChunk.ChunkCount >= 1)
+    SRS_PROJECT_CHUNK ProjectChunk;
+
+// Offset Chunk
+FSeek(InfoChunk.OffsetChunkOffset);
+SRS_OFFSET_CHUNK OffsetChunk;
+
+// End Chunk
+SRS_END_CHUNK EndChunk;
