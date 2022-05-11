@@ -12,6 +12,8 @@ typedef struct {
     StringPtr Name(NameOffset.offset);
     int ID;
     uint field_08;
+    if (VERSION >= 3)
+        short field_10;
     ushort CharacterCount;
     ushort field_0E;
     size_t CharacterOffset;
