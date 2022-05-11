@@ -16,7 +16,7 @@ typedef struct {
     ushort field_0E;
     size_t CharacterOffset;
     size_t field_14;
-    size_t field_18; p = FTell();
+    size_t UserDataOffset; p = FTell();
     if (CharacterOffset.offset && CharacterCount)
     {
         FSeek(CharacterOffset.offset); SRS_CHARACTER_MAPPING CharacterMappings[CharacterCount];
