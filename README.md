@@ -23,8 +23,10 @@ It's the successor to SEGA's in-house `Ninja` library's GUI format used in games
 ### SWIFv4
 #### ・wars - Sonic Forces (Nintendo Switch, PC, PlayStation 4, Xbox One)
 
-### TO BE CATEGORIZED (64bit):
+### SWIFv5
 #### ・musashi - Olympic Games Tokyo 2020 - The Official Video Game (Nintendo Switch, PC, PlayStation 4, Xbox One, Xbox Series S/X)
+
+### TO BE CATEGORIZED (64bit):
 #### ・rings - Mario and Sonic at the Tokyo 2020 Olympic Games (Nintendo Switch)
 #### ・arukas - Sakura Wars 2019 (PlayStation 4)
 #### ・tenpex - Puyo Puyo Tetris 2 (Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series S/X)
