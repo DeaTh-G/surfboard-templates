@@ -5,6 +5,8 @@ typedef struct {
     StringPtr Name(NameOffset.offset);
     uint ID;
     uint Flags;
+    if (VERSION >= 3)
+        uint field_10;
     uint LayerCount;
     size_t LayerOffset;
     ushort CameraCount;
@@ -19,6 +21,6 @@ typedef struct {
     }
     if (CameraOffset.offset && CameraCount);
     {
-        FSeek(CameraOffset.offset); SRS_CAMERA Cameras[CameraCount];
+        FSeek(CameraOffset.offset); SRS_CAMERA Cameras(1)[CameraCount];
     } FSeek(p);
 } SRS_SCENE<optimize=false, read=Name.Name>;

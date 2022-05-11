@@ -10,11 +10,11 @@ typedef struct{
     size_t SceneOffset;
     size_t TextureListOffset;
     size_t FontOffset;
-    SRS_CAMERA Camera;
+    SRS_CAMERA Camera(0);
     uint StartFrame;
     uint EndFrame;
     float FrameRate;
-    uint UserDataOffset; p = FTell();
+    size_t UserDataOffset; p = FTell();
     if (SceneOffset.offset && SceneCount)
     {
         FSeek(SceneOffset.offset); SRS_SCENE Scenes[SceneCount];
