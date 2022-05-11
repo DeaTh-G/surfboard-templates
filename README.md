@@ -11,13 +11,13 @@ It's the successor to SEGA's in-house `Ninja` library's GUI format used in games
 ### SWIFv2
 #### ・sonic2013 - Sonic Lost World (Nintendo Wii U, PC)
 #### ・urals - Mario and Sonic at the Sochi 2014 Olympic Winter Games (Nintendo Wii U)
-#### ・tenpplus - Puyo Puyo Tetris (Nintendo 3DS, Nintendo Wii U, PlayStation 3, PlayStation Vita?)
+#### ・tenpplus - Puyo Puyo Tetris (Nintendo 3DS, Nintendo Wii U, PlayStation 3)
 #### ・unison - Mario and Sonic at the Rio 2016 Olympic Games (Nintendo Wii U)
 #### ・sergio - Mario and Sonic at the Rio 2016 Olympic Games (Nintendo 3DS)
 #### ・AD24 - Puyo Puyo Chronicle (Nintendo 3DS)
 
 ### SWIFv3 - 64bit
-#### ・tenpplus - Puyo Puyo Tetris (Nintendo Switch, PC, PlayStation 4, Xbox One)
+#### ・tenpplus - Puyo Puyo Tetris (Nintendo Switch, PC, PlayStation 4, PlayStation Vita?, Xbox One)
 
 ### TO BE CATEGORIZED (64bit):
 #### ・wars - Sonic Forces (Nintendo Switch, PC, PlayStation 4, Xbox One)
