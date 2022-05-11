@@ -19,8 +19,10 @@ It's the successor to SEGA's in-house `Ninja` library's GUI format used in games
 ### SWIFv3 - 64bit
 #### ・tenpplus - Puyo Puyo Tetris (Nintendo Switch, PC, PlayStation 4, PlayStation Vita?, Xbox One)
 
-### TO BE CATEGORIZED (64bit):
+### SWIFv4
 #### ・wars - Sonic Forces (Nintendo Switch, PC, PlayStation 4, Xbox One)
+
+### TO BE CATEGORIZED (64bit):
 #### ・es24 - Puyo Puyo Champions (Nintendo Switch, PC, PlayStation 4, Xbox One)
 #### ・musashi - Olympic Games Tokyo 2020 - The Official Video Game (Nintendo Switch, PC, PlayStation 4, Xbox One, Xbox Series S/X)
 #### ・rings - Mario and Sonic at the Tokyo 2020 Olympic Games (Nintendo Switch)
