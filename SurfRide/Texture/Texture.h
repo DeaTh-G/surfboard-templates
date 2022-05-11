@@ -11,6 +11,11 @@ typedef struct {
 
     size_t NameOffset;
     StringPtr Name(NameOffset.offset);
+    if (VERSION >= 4)
+    {
+        size_t FileNameOffset;
+        StringPtr FileName(FileNameOffset.offset);
+    }
     uint ID;
     ushort Width;
     ushort Height;
