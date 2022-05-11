@@ -20,6 +20,7 @@
 // Image Cast
 #include "SurfRide/Cast/Image/PatternInfo.h"
 #include "SurfRide/Cast/Image/FontInfo.h"
+#include "SurfRide/Cast/Image/UnknownInfo.h"
 #include "SurfRide/Cast/Image/ImageCast.h"
 
 // Slice Cast

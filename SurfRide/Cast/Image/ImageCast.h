@@ -12,15 +12,19 @@ typedef struct {
     short field_24;
     short field_26;
     ushort PatternInfoCount;
-    ushort count_2A;
+    ushort UnknownInfoCount;
     size_t PatternInfoOffset;
-    size_t field_30;
+    size_t UnknownInfoOffset;
     size_t FontInfoOffset;
-    size_t field_38;
-    size_t field_3C; p = FTell();
+    size_t field_3C;
+    size_t field_40; p = FTell();
     if (PatternInfoCount && PatternInfoOffset.offset)
     {
         FSeek(PatternInfoOffset.offset); SRS_PATTERN_INFO PatternInfo[PatternInfoCount];
+    }
+    if (UnknownInfoCount && UnknownInfoOffset.offset)
+    {
+        FSeek(UnknownInfoOffset.offset); SRS_UNKNOWN_INFO UnknownInfo[UnknownInfoCount];
     }
     if (FontInfoOffset.offset)
     {
