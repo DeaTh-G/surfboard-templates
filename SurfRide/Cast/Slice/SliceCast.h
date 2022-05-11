@@ -22,7 +22,7 @@ typedef struct {
     size_t field_40;
     
     local int i;
-    for (i = 0; i < field_2E * 3; i++)
+    for (i = 0; i < field_2C * field_2E; i++)
         SRS_SLICE Slice;
     
     p = FTell();
