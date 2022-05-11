@@ -28,6 +28,9 @@
 #include "SurfRide/Cast/Slice/SliceInfo.h"
 #include "SurfRide/Cast/Slice/SliceCast.h"
 
+// Reference Cast
+#include "SurfRide/Cast/Reference/ReferenceCast.h"
+
 // Cast
 #include "SurfRide/Cast/Cell.h"
 #include "SurfRide/Cast/Cell3D.h"
