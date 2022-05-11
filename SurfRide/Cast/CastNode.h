@@ -22,6 +22,9 @@ typedef struct {
             case 2: 
                 SRS_SLICE_CAST SliceCast;
                 break;
+            case 3:
+                SRS_REFERENCE_CAST ReferenceCast;
+                break;
         }
     } 
     if (UserDataOffset.offset)
