@@ -6,7 +6,8 @@
 //   Version: 1.0.0
 //   Purpose: Parse SWIF files.
 //   Supported Games:
-//     - Puyo Puyo Tetris (Nintendo Switch, PC, PlayStation 4, Xbox One)
+//     - Puyo Puyo Tetris (Nintendo Switch, PC, PlayStation 4, PlayStation Vita?, Xbox One)
+//     - Puyo Puyo Champions (Nintendo Switch, PC, PlayStation 4, Xbox One)
 //------------------------------------------------
 
 #include "include.h"
