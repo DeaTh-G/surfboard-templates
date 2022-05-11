@@ -18,8 +18,8 @@ typedef struct {
     short SliceInfoCount;
     short field_36;
     size_t SliceInfoOffset;
-    uint field_3C;
-    uint field_40;
+    size_t field_3C;
+    size_t field_40;
     
     local int i;
     for (i = 0; i < field_2E * 3; i++)
