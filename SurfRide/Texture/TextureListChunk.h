@@ -3,6 +3,8 @@ typedef struct {
 
     size_t NameOffset;
     StringPtr Name(NameOffset.offset);
+    if (VERSION >= 3)
+        uint field_08;
     uint TextureCount;
     size_t TextureOffset;
     size_t UserDataOffset; p = FTell();
