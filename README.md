@@ -1,5 +1,5 @@
 # swif-template
-010 Editor templates for various versions of the `Surfride Window Information (SWIF)` file format used primarily in Hedgehog Engine games.
+010 Editor templates for various versions of the `Surfride Draw Project (*.swif)` file format used primarily in Hedgehog Engine games.
 The format made its first appearance in `Mario and Sonic at the London 2012 Olympic Games` developed by `Sega Sports R&D` in 2011.
 It's the successor to SEGA's in-house `Ninja` library's GUI format used in games until 2011's `Sonic Generations`.
  
@@ -28,3 +28,6 @@ It's the successor to SEGA's in-house `Ninja` library's GUI format used in games
 #### ・rings - Mario and Sonic at the Tokyo 2020 Olympic Games (Nintendo Switch)
 #### ・arukas - Sakura Wars 2019 (PlayStation 4)
 #### ・tenpex - Puyo Puyo Tetris 2 (Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series S/X)
+
+# swtd-template
+There's nothing here yet...
