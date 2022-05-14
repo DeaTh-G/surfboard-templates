@@ -13,7 +13,8 @@ typedef struct{
     SRS_CAMERA Camera(0);
     uint StartFrame;
     uint EndFrame;
-    float FrameRate;
+    if (VERSION >= 1)
+        float FrameRate;
     size_t UserDataOffset; p = FTell();
     if (SceneOffset.offset && SceneCount)
     {
