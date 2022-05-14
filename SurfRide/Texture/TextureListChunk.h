@@ -3,11 +3,15 @@ typedef struct {
 
     size_t NameOffset;
     StringPtr Name(NameOffset.offset);
-    if (VERSION >= 4 || VERSION <= 0)
+    if (VERSION >= 4)
         uint field_08;
     uint TextureCount;
     size_t TextureOffset;
-    size_t UserDataOffset; p = FTell();
+    size_t UserDataOffset;
+    if (VERSION == 0)
+        uint field_14;
+        
+    p = FTell();
     if (TextureOffset.offset && TextureCount)
     {
         FSeek(TextureOffset.offset); SRS_TEXTURE Textures[TextureCount];
