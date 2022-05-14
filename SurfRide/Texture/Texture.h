@@ -26,5 +26,9 @@ typedef struct {
     if (ImageOffset.offset && ImageCount)
     {
         FSeek(ImageOffset.offset); SRS_IMAGE Images[ImageCount];
+    }
+    if (UserDataOffset.offset)
+    {
+        FSeek(UserDataOffset.offset); SRS_USERDATA UserData;
     } FSeek(p);
 } SRS_TEXTURE<optimize=false, bgcolor=0x002D72, read=Name.Name>;

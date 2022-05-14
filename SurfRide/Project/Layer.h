@@ -33,5 +33,9 @@ typedef struct {
     if (AnimationOffset.offset && AnimationCount)
     {
         FSeek(AnimationOffset.offset); SRS_ANIMATION Animations[AnimationCount];
+    }
+    if (UserDataOffset.offset)
+    {
+        FSeek(UserDataOffset.offset); SRS_USERDATA UserData;
     } FSeek(p);
 } SRS_LAYER<optimize=false, read=Name.Name>;

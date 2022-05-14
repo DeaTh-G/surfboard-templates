@@ -6,6 +6,7 @@
 #include "SurfRide/types/Math.h"
 #include "SurfRide/types/Color.h"
 #include "SurfRide/types/ChunkHeader.h"
+#include "SurfRide/types/UserData.h"
 
 // Texture
 #include "SurfRide/Texture/Texture.h"
@@ -34,7 +35,6 @@
 // Cast
 #include "SurfRide/Cast/Cell.h"
 #include "SurfRide/Cast/Cell3D.h"
-#include "SurfRide/Cast/CastUserData.h"
 #include "SurfRide/Cast/CastNode.h"
 
 // Animations

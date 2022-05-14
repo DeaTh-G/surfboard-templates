@@ -11,8 +11,12 @@ typedef struct {
     if (TextureOffset.offset && TextureCount)
     {
         FSeek(TextureOffset.offset); SRS_TEXTURE Textures[TextureCount];
+    }
+    if (UserDataOffset.offset)
+    {
+        FSeek(UserDataOffset.offset); SRS_USERDATA UserData;
     } FSeek(p); 
-} SRS_TEXTURE_LIST<optimize=false, read=Name.Name>;
+} SRS_TEXTURELIST<optimize=false, read=Name.Name>;
 
 typedef struct {
     local uint64 o<hidden=true> = FTell();
@@ -27,6 +31,6 @@ typedef struct {
     uint TextureListCount; p = FTell();
     if (TextureListOffset && TextureListCount)
     { 
-        FSeek(o + TextureListOffset); SRS_TEXTURE_LIST TextureLists[TextureListCount];
+        FSeek(o + TextureListOffset); SRS_TEXTURELIST TextureLists[TextureListCount];
     }
-} SRS_TEXTURE_LIST_CHUNK<bgcolor=0x006AFF>;
+} SRS_TEXTURELIST_CHUNK<bgcolor=0x006AFF>;

@@ -22,5 +22,9 @@ typedef struct {
     if (CharacterOffset.offset && CharacterCount)
     {
         FSeek(CharacterOffset.offset); SRS_CHARACTER_MAPPING CharacterMappings[CharacterCount];
+    }
+    if (UserDataOffset.offset)
+    {
+        FSeek(UserDataOffset.offset); SRS_USERDATA UserData;
     } FSeek(p);
 } SRS_FONT<optimize=false, read=Name.Name>;

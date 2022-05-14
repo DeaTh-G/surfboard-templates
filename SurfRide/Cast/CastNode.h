@@ -26,9 +26,9 @@ typedef struct {
                 SRS_REFERENCE_CAST ReferenceCast;
                 break;
         }
-    } 
+    }
     if (UserDataOffset.offset)
     {
-        FSeek(UserDataOffset.offset); SRS_CAST_USER_DATA UserData;
+        FSeek(UserDataOffset.offset); SRS_USERDATA UserData;
     } FSeek(p);
 } SRS_CASTNODE<optimize=false, read=Name.Name>;

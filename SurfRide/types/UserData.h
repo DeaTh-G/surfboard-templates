@@ -3,22 +3,22 @@ typedef struct {
 
     size_t NameOffset;
     StringPtr Name(NameOffset.offset);
-    uint field_04;
-    size_t offset_08; p = FTell();
-    if (offset_08.offset)
+    uint DataType;
+    size_t ValueOffset; p = FTell();
+    if (ValueOffset.offset)
     {
-        FSeek(offset_08.offset);
-        switch (field_04)
+        FSeek(ValueOffset.offset);
+        switch (DataType)
         {
         case 5:
-                string field_08;
+                string Value;
                 break;
             default:
-                uint field_08;
+                uint Value;
                 break;
         }
     } FSeek(p);
-} SRS_CAST_DATA<optimize=false, read=Name.Name>;
+} SRS_DATA<optimize=false, read=Name.Name>;
 
 typedef struct {
     local uint64 p<hidden=true>;
@@ -29,6 +29,6 @@ typedef struct {
     p = FTell();
     if (DataOffset.offset)
     {
-        FSeek(DataOffset.offset); SRS_CAST_DATA Data[DataCount];
+        FSeek(DataOffset.offset); SRS_DATA Data[DataCount];
     } FSeek(p);
-} SRS_CAST_USER_DATA<optimize=false>;
+} SRS_USERDATA<optimize=false>;

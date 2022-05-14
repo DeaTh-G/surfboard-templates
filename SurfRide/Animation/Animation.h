@@ -15,5 +15,9 @@ typedef struct {
     if (LinkOffset.offset && LinkCount)
     {
         FSeek(LinkOffset.offset); SRS_ANIMATIONLINK AnimationLinks[LinkCount];
+    }
+    if (UserDataOffset.offset)
+    {
+        FSeek(UserDataOffset.offset); SRS_USERDATA UserData;
     } FSeek(p);
 } SRS_ANIMATION<optimize=false, read=Name.Name>;

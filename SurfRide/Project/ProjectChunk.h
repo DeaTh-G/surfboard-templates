@@ -21,11 +21,15 @@ typedef struct{
     }
     if (TextureListOffset.offset && TextureListCount);
     {
-        FSeek(TextureListOffset.offset); SRS_TEXTURE_LIST TextureLists[TextureListCount];
+        FSeek(TextureListOffset.offset); SRS_TEXTURELIST TextureLists[TextureListCount];
     }
     if (FontOffset.offset && FontCount)
     { 
         FSeek(FontOffset.offset); SRS_FONT FontLists[FontCount];
+    }
+    if (UserDataOffset.offset)
+    {
+        FSeek(UserDataOffset.offset); SRS_USERDATA UserData;
     } FSeek(p);
 } SRS_PROJECT<read=Name.Name>;
 

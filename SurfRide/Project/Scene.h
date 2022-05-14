@@ -22,5 +22,9 @@ typedef struct {
     if (CameraOffset.offset && CameraCount);
     {
         FSeek(CameraOffset.offset); SRS_CAMERA Cameras(1)[CameraCount];
+    }
+    if (UserDataOffset.offset)
+    {
+        FSeek(UserDataOffset.offset); SRS_USERDATA UserData;
     } FSeek(p);
 } SRS_SCENE<optimize=false, read=Name.Name>;
