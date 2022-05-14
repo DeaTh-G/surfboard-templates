@@ -11,7 +11,7 @@ typedef struct {
 
     size_t NameOffset;
     StringPtr Name(NameOffset.offset);
-    if (VERSION >= 4)
+    if (VERSION >= 5)
     {
         size_t FileNameOffset;
         StringPtr FileName(FileNameOffset.offset);

@@ -11,11 +11,11 @@ typedef struct (string name){
     ubyte field_0A;
     ubyte field_0B;
     SRS_VECTOR3 Position;
-    if (VERSION >= 3)
+    if (VERSION >= 4)
         SRS_VECTOR3 vector_18;
     float field_18;
     float field_1C;
     uint Rotation; 
-    if (VERSION >= 3)
+    if (VERSION >= 4)
         uint field_30;
 } SRS_CELL<optimize=false, read=Name>;

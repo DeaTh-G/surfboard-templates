@@ -5,7 +5,7 @@ typedef struct {
     StringPtr Name(NameOffset.offset);
     uint ID;
     uint Flags;
-    if (VERSION >= 3)
+    if (VERSION >= 4)
         uint field_10;
     uint LayerCount;
     size_t LayerOffset;

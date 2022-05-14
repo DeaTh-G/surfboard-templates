@@ -7,8 +7,9 @@ typedef struct {
     uint LinkCount;
     uint FrameCount;
     size_t LinkOffset;
-    size_t UserDataOffset;
     if (VERSION >= 1)
+        size_t UserDataOffset;
+    if (VERSION >= 2)
         byte IsLooping;
 
     p = FTell();

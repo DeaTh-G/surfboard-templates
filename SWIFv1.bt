@@ -6,12 +6,12 @@
 //   Version: 1.0.0
 //   Purpose: Parse Surfride Draw Project files.
 //   Supported Games:
-//     - Mario & Sonic at the London 2012 Olympic Games (Nintendo Wii, Nintendo 3DS)
+//     - Mario & Sonic at the London 2012 Olympic Games (Nintendo Wii) - Files with UnknownDate set to 2010-04-20
 //------------------------------------------------
 
 #include "include.h"
 
-local uint VERSION = 0;
+local int VERSION = 0;
 
 // Info Chunk
 SRS_INFO_CHUNK InfoChunk;

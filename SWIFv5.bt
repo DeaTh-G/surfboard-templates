@@ -3,18 +3,15 @@
 //
 //      File: SWIF.bt
 //   Authors: ĐeäTh
-//   Version: 1.0.4
+//   Version: 1.0.3
 //   Purpose: Parse Surfride Draw Project files.
 //   Supported Games:
-//     - Olympic Games Tokyo 2020 - The Official Video Game (Nintendo Switch, PC, PlayStation 4, Xbox One, Xbox Series S/X)
-//     - Mario and Sonic at the Tokyo 2020 Olympic Games (Nintendo Switch)
-//     - Sakura Wars 2019 (PlayStation 4)
-//     - Puyo Puyo Tetris 2 (Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series S/X)
+//     - Sonic Forces (Nintendo Switch, PC, PlayStation 4, Xbox One)
 //------------------------------------------------
 
 #include "include.h"
 
-local uint VERSION = 4;
+local int VERSION = 4;
 
 // Info Chunk
 SRS_INFO_CHUNK InfoChunk;
