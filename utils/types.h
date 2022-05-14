@@ -1,5 +1,5 @@
 typedef struct {
-    if (VERSION >= 2)
+    if (VERSION >= 3)
     {
         if (FTell() % 8 != 0)
             FSkip(8 - (FTell() % 8));
@@ -12,7 +12,7 @@ typedef struct {
     
     local uint64 value;
     
-    if (VERSION >= 2)
+    if (VERSION >= 3)
         uint64 offset;
     else
         int offset;
