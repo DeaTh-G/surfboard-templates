@@ -18,11 +18,43 @@ SRS_INFO_CHUNK InfoChunk;
 
 // Texture List / Project Chunk
 FSeek(InfoChunk.NextChunkOffset);
-if (InfoChunk.ChunkCount >= 2)
-    SRS_TEXTURELIST_CHUNK TextureListChunk;
+local uint64 o<hidden=true> = FTell();
+local int i;
+local int isBigEndian = IsBigEndian();
+local uint Signature = ReadUInt(o);
 
-if (InfoChunk.ChunkCount >= 1)
-    SRS_PROJECT_CHUNK ProjectChunk;
+for (i = 0; i < InfoChunk.ChunkCount; i++)
+{
+    while (Signature != 0x52505753 || Signature != 0x4C545753)
+    {
+        LittleEndian();
+        if (Signature == 0x52505753 || Signature == 0x4C545753)
+            break;
+
+        o = FTell();
+        Signature = ReadUInt(o);
+        FSkip(4);
+    }
+    
+    if (isBigEndian) BigEndian();
+
+    if (Signature == 0x4C545753)
+    {
+        FSeek(o); SRS_TEXTURELIST_CHUNK TextureListChunk;
+    }
+    else if (Signature == 0x52505753)
+    {
+        FSeek(o); SRS_PROJECT_CHUNK ProjectChunk;
+    }
+
+    o = FTell();
+    if (o % 16 != 0)
+    {
+        FSkip(o % 16); o = FTell();
+    }
+    Signature = ReadUInt(o);
+}
+
 
 // Offset Chunk
 FSeek(InfoChunk.OffsetChunkOffset);
