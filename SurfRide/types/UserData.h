@@ -10,12 +10,24 @@ typedef struct {
         FSeek(ValueOffset.offset);
         switch (DataType)
         {
+        case 0:
+            char Value;
+            break;
+        case 1:
+            int Value;
+            break;
+        case 2:
+            uint Value;
+            break;
+        case 3:
+            float Value;
+            break;
         case 5:
-                string Value;
-                break;
-            default:
-                uint Value;
-                break;
+            string Value;
+            break;
+        default:
+            uint Value;
+            break;
         }
     } FSeek(p);
 } SRS_DATA<optimize=false, read=Name.Name>;
