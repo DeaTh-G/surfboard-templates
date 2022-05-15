@@ -26,5 +26,5 @@ typedef struct {
     ubyte field_21;
     ubyte field_22;
     ubyte field_23;
-    uint field_24;
+    uint SliceIndex;
 } SRS_SLICE<optimize=false>;
