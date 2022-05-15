@@ -4,6 +4,6 @@ typedef struct {
     uint NextChunkOffset;
     uint ChunkListSize;
     uint OffsetChunkOffset;
-    uint UnknownDate;
+    uint RevisionDate;
     uint field_1C;
 } SRS_INFO_CHUNK<bgcolor=0x0000FF>;
