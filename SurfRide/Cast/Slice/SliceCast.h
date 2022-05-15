@@ -20,10 +20,7 @@ typedef struct {
     size_t SliceInfoOffset;
     size_t field_3C;
     size_t field_40;
-    
-    local int i;
-    for (i = 0; i < field_2C * field_2E; i++)
-        SRS_SLICE Slice;
+    SRS_SLICE Slices[field_2C * field_2E];
     
     p = FTell();
     if (SliceInfoOffset.offset && SliceInfoCount)
