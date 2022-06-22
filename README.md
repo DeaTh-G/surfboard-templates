@@ -31,6 +31,7 @@ It's the successor to SEGA's in-house `Ninja` library's GUI format used in games
 #### ・rings - Mario and Sonic at the Tokyo 2020 Olympic Games (Nintendo Switch)
 #### ・arukas - Sakura Wars 2019 (PlayStation 4)
 #### ・tenpex - Puyo Puyo Tetris 2 (Nintendo Switch, PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series S/X)
+#### ・hite - Sonic Origins (Nintendo Switch, PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series S/X)
 
 # swtd-template
 There's nothing here yet...
