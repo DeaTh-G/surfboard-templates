@@ -30,7 +30,7 @@ It's the successor to SEGA's in-house `Ninja` library's GUI format used in games
 #### ・musashi - Olympic Games Tokyo 2020 - The Official Video Game (Nintendo Switch, PC, PlayStation 4, Xbox One, Xbox Series S/X)
 #### ・rings - Mario and Sonic at the Tokyo 2020 Olympic Games (Nintendo Switch)
 #### ・arukas - Sakura Wars 2019 (PlayStation 4)
-#### ・tenpex - Puyo Puyo Tetris 2 (Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series S/X)
+#### ・tenpex - Puyo Puyo Tetris 2 (Nintendo Switch, PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series S/X)
 
 # swtd-template
 There's nothing here yet...
