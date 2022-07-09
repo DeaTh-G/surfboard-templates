@@ -1,20 +1,20 @@
 typedef struct (uint Flags){
-    uint Keyframe;
+    uint KeyFrame;
     switch (Flags & 0xF0)
     {
         case 0x10:
-            float Value;
+            float KeyValue;
             break;
         case 0x40:
-            int Value;
+            int KeyValue;
             break;
         case 0x60:
-            uint Value;
+            uint KeyValue;
             break;
         case 0x70:
-            double Value;
+            double KeyValue;
             break;
     }
-    float TangentIn;
-    float TangentOut;
+    float InParam;
+    float OutParam;
 } SRS_KEYHERMITE<optimize=false>;

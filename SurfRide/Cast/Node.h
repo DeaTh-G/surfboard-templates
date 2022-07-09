@@ -3,17 +3,17 @@ typedef struct {
 
     size_t NameOffset;
     StringPtr Name(NameOffset.offset);
-    uint ID;
+    uint Index;
     uint Flags;
-    size_t NodeOffset;    
+    size_t DataOffset;    
     short ChildIndex;
     short SiblingIndex;
     size_t UserDataOffset;
 
     p = FTell();
-    if (NodeOffset.offset)
+    if (DataOffset.offset)
     {
-        FSeek(NodeOffset.offset);
+        FSeek(DataOffset.offset);
         switch (Flags & 0xF)
         {
             case 1: 
@@ -31,4 +31,4 @@ typedef struct {
     {
         FSeek(UserDataOffset.offset); SRS_USERDATA UserData;
     } FSeek(p);
-} SRS_CASTNODE<optimize=false, read=Name.Name>;
+} SRS_NODE<optimize=false, read=Name.Name>;

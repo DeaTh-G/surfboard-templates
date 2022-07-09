@@ -6,12 +6,12 @@ typedef struct (uint parent) {
         uint ID;
     }
     SRS_VECTOR3 Position;
-    SRS_VECTOR3 LookAt;
+    SRS_VECTOR3 Target;
     if (VERSION >= 4)
         int field_38;
-    uint Flags;
-    float Near;
-    float Far;
+    uint FovY;
+    float ZNear;
+    float ZFar;
     if (VERSION >= 1)
     {
         size_t field_2C;

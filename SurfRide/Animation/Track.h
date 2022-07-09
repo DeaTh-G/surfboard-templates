@@ -1,14 +1,14 @@
-enum <ushort> SRS_ANIMATION_TYPE
+enum <ushort> SRS_CURVE_TYPE
 {
-    XPosition,
-    YPosition,
-    ZPosition,
-    XRotation,
-    YRotation,
-    ZRotation,
-    XScale,
-    YScale,
-    ZScale,
+    Tx,
+    Ty,
+    Tz,
+    Rx,
+    Ry,
+    Rz,
+    Sx,
+    Sy,
+    Sz,
     MaterialColor,
     Unknown1,
     Unknown2, // SurfRide::DirtyFlag::SetCellVertices
@@ -20,10 +20,10 @@ enum <ushort> SRS_ANIMATION_TYPE
     Unknown8, // SurfRide::DirtyFlag::SetCellCropUV
     Unknown9, // SurfRide::DirtyFlag::SetCellCropUV
     IlluminationColor = 20,
-    MaterialColorRed,
-    MaterialColorGreen,
-    MaterialColorBlue,
-    MaterialColorAlpha,
+    MaterialColorR,
+    MaterialColorG,
+    MaterialColorB,
+    MaterialColorA,
     VertexColorRedClear,
     VertexColorGreenClear,
     VertexColorBlueClear,
@@ -40,20 +40,20 @@ enum <ushort> SRS_ANIMATION_TYPE
     VertexColorGreenClampLow,
     VertexColorBlueClampLow,
     VertexColorAlphaClampLow,
-    IlluminationColorRed,
-    IlluminationColorGreen,
-    IlluminationColorBlue,
-    IlluminationColorAlpha,
+    IlluminationColorR,
+    IlluminationColorG,
+    IlluminationColorB,
+    IlluminationColorA,
 };
 
 typedef struct {
     local uint64 p<hidden=true>;
 
-    SRS_ANIMATION_TYPE AnimationType;
+    SRS_CURVE_TYPE TrackType;
     ushort KeyCount;
     uint Flags;
-    uint StartFrame;
-    uint EndFrame;
+    uint FirstFrame;
+    uint LastFrame;
     size_t KeyOffset;
 
     p = FTell();

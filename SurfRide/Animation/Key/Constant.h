@@ -1,27 +1,27 @@
 typedef struct (uint Flags){
-    uint Keyframe;
+    uint KeyFrame;
     switch (Flags & 0xF0)
     {
         case 0x10:
-            float Value;
+            float KeyValue;
             break;
         case 0x20:
-            int Value;
+            int KeyValue;
             break;
         case 0x30:
-            char Value[4]<optimize=false>;
+            char KeyValue[4]<optimize=false>;
             break;
         case 0x50:
-            SRS_COLOR Value;
+            SRS_COLOR KeyValue;
             break;
         case 0x60:
-            uint Value;
+            uint KeyValue;
             break;
         case 0x70:
-            double Value;
+            double KeyValue;
             break;
         case 0x80:
-            char Value[4]<optimize=false>;
+            char KeyValue[4]<optimize=false>;
             break;
     }
 } SRS_KEYCONSTANT<optimize=false>;

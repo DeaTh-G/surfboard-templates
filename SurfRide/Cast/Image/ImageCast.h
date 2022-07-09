@@ -4,27 +4,27 @@ typedef struct {
     uint Flags;
     float Width;
     float Height;
-    SRS_VECTOR2 AnchorPoint;
+    SRS_VECTOR2 PivotPoint;
     SRS_COLOR GradientTopLeft;
     SRS_COLOR GradientBottomLeft;
     SRS_COLOR GradientTopRight;
     SRS_COLOR GradientBottomRight;
-    short field_24;
-    short field_26;
-    ushort PatternInfoCount;
-    ushort UnknownInfoCount;
-    size_t PatternInfoOffset;
-    size_t UnknownInfoOffset;
+    short CropIndex0;
+    short CropIndex1;
+    ushort CropRef0Count;
+    ushort CropRef1Count;
+    size_t CropRef0Offset;
+    size_t CropRef1Offset;
     size_t FontInfoOffset;
     size_t field_3C;
     size_t field_40; p = FTell();
-    if (PatternInfoCount && PatternInfoOffset.offset)
+    if (CropRef0Count && CropRef0Offset.offset)
     {
-        FSeek(PatternInfoOffset.offset); SRS_PATTERN_INFO PatternInfo[PatternInfoCount];
+        FSeek(CropRef0Offset.offset); SRS_CROPREF CropRef0s[CropRef0Count];
     }
-    if (UnknownInfoCount && UnknownInfoOffset.offset)
+    if (CropRef1Count && CropRef1Offset.offset)
     {
-        FSeek(UnknownInfoOffset.offset); SRS_UNKNOWN_INFO UnknownInfo[UnknownInfoCount];
+        FSeek(CropRef1Offset.offset); SRS_CROPREF CropRef1s[CropRef1Count];
     }
     if (FontInfoOffset.offset)
     {

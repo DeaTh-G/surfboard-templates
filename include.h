@@ -19,9 +19,8 @@
 #include "SurfRide/Project/Font.h"
 
 // Image Cast
-#include "SurfRide/Cast/Image/PatternInfo.h"
+#include "SurfRide/Cast/Image/CropRef.h"
 #include "SurfRide/Cast/Image/FontInfo.h"
-#include "SurfRide/Cast/Image/UnknownInfo.h"
 #include "SurfRide/Cast/Image/ImageCast.h"
 
 // Slice Cast
@@ -33,9 +32,9 @@
 #include "SurfRide/Cast/Reference/ReferenceCast.h"
 
 // Cast
-#include "SurfRide/Cast/Cell.h"
-#include "SurfRide/Cast/Cell3D.h"
-#include "SurfRide/Cast/CastNode.h"
+#include "SurfRide/Cast/TRS2D.h"
+#include "SurfRide/Cast/TRS3D.h"
+#include "SurfRide/Cast/Node.h"
 
 // Animations
 #include "SurfRide/Animation/Key/Constant.h"
@@ -43,7 +42,7 @@
 #include "SurfRide/Animation/Key/Hermite.h"
 #include "SurfRide/Animation/Key/Individual.h"
 #include "SurfRide/Animation/Track.h"
-#include "SurfRide/Animation/AnimationLink.h"
+#include "SurfRide/Animation/Motion.h"
 #include "SurfRide/Animation/Animation.h"
 
 // Scene

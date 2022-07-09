@@ -3,7 +3,7 @@ typedef struct {
 
     size_t NameOffset;
     StringPtr Name(NameOffset.offset);
-    uint ID;
+    uint Index;
     uint Flags;
     if (VERSION >= 4)
         uint field_10;
@@ -12,8 +12,8 @@ typedef struct {
     ushort CameraCount;
     short DefaultCameraIndex;
     size_t CameraOffset;
-    SRS_COLOR BackgroundColor;
-    SRS_VECTOR2 FrameSize;
+    SRS_COLOR BackColor;
+    SRS_VECTOR2 Resolution;
     size_t UserDataOffset; p = FTell();
     if (LayerOffset.offset && LayerCount)
     {

@@ -3,7 +3,7 @@ typedef struct {
     float Top;
     float Right;
     float Bottom;
-} SRS_IMAGE<optimize=false, bgcolor=0xFFFF00,
+} SRS_RECTANGLE<optimize=false, bgcolor=0xFFFF00,
     read=Str("[%f, %f, %f, %f]", Left, Top, Right, Bottom)>;
 
 typedef struct {
@@ -16,16 +16,16 @@ typedef struct {
         size_t FileNameOffset;
         StringPtr FileName(FileNameOffset.offset);
     }
-    uint ID;
+    uint Index;
     ushort Width;
     ushort Height;
     uint Flags;
-    uint ImageCount;
-    size_t ImageOffset;
+    uint CropCount;
+    size_t CropOffset;
     size_t UserDataOffset; p = FTell();
-    if (ImageOffset.offset && ImageCount)
+    if (CropOffset.offset && CropCount)
     {
-        FSeek(ImageOffset.offset); SRS_IMAGE Images[ImageCount];
+        FSeek(CropOffset.offset); SRS_RECTANGLE Crops[CropCount];
     }
     if (UserDataOffset.offset)
     {

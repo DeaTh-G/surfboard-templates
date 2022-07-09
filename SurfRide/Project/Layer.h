@@ -3,31 +3,31 @@ typedef struct {
 
     size_t NameOffset;
     StringPtr Name(NameOffset.offset);
-    uint ID;
+    uint Index;
     uint Flags;
-    uint CastCellCount;
-    size_t CastNodeOffset;
-    size_t CastCellOffset;
+    uint CastCount;
+    size_t NodeOffset;
+    size_t TransformOffset;
     uint AnimationCount;
     size_t AnimationOffset;
     uint DefaultAnimationIndex;
     size_t UserDataOffset; p = FTell();
-    if (CastCellCount)
+    if (CastCount)
     {
-        if (CastNodeOffset.offset)
+        if (NodeOffset.offset)
         {
-            FSeek(CastNodeOffset.offset); SRS_CASTNODE Casts[CastCellCount];
+            FSeek(NodeOffset.offset); SRS_NODE Casts[CastCount];
         }
-        if (CastCellOffset.offset)
+        if (TransformOffset.offset)
         {
-            FSeek(CastCellOffset.offset);
+            FSeek(TransformOffset.offset);
 
             local int i;
-            for (i = 0; i < CastCellCount; i++)
+            for (i = 0; i < CastCount; i++)
                 if ((Flags & 0xF) == 1)
-				    SRS_CELL3D Cells(Casts[i].Name.Name);
+				    SRS_TRS3D Transforms(Casts[i].Name.Name);
                 else
-				    SRS_CELL Cells(Casts[i].Name.Name);
+				    SRS_TRS2D Transforms(Casts[i].Name.Name);
         }
     }
     if (AnimationOffset.offset && AnimationCount)

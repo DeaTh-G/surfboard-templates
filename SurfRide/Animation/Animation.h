@@ -3,19 +3,19 @@ typedef struct {
 
     size_t NameOffset;
     StringPtr Name(NameOffset.offset);
-    uint ID;
-    uint LinkCount;
-    uint FrameCount;
-    size_t LinkOffset;
+    uint Index;
+    uint MotionCount;
+    uint EndFrame;
+    size_t MotionOffset;
     if (VERSION >= 1)
         size_t UserDataOffset;
     if (VERSION >= 2)
         byte IsLooping;
 
     p = FTell();
-    if (LinkOffset.offset && LinkCount)
+    if (MotionOffset.offset && MotionCount)
     {
-        FSeek(LinkOffset.offset); SRS_ANIMATIONLINK AnimationLinks[LinkCount];
+        FSeek(MotionOffset.offset); SRS_MOTION Motions[MotionCount];
     }
     if (UserDataOffset.offset)
     {
