@@ -3,7 +3,7 @@ typedef struct {
 
     size_t NameOffset;
     StringPtr Name(NameOffset.offset);
-    uint Index;
+    uint ID;
     uint Flags;
     size_t DataOffset;    
     short ChildIndex;
@@ -16,14 +16,15 @@ typedef struct {
         FSeek(DataOffset.offset);
         switch (Flags & 0xF)
         {
+            // case 0: SRS_NULLCAST NullCast;
             case 1: 
-                SRS_IMAGE_CAST ImageCast;
+                SRS_IMAGECAST ImageCast;
                 break;
             case 2: 
-                SRS_SLICE_CAST SliceCast;
+                SRS_SLICECAST SliceCast;
                 break;
             case 3:
-                SRS_REFERENCE_CAST ReferenceCast;
+                SRS_REFERENCECAST ReferenceCast;
                 break;
         }
     }
@@ -31,4 +32,4 @@ typedef struct {
     {
         FSeek(UserDataOffset.offset); SRS_USERDATA UserData;
     } FSeek(p);
-} SRS_NODE<optimize=false, read=Name.Name>;
+} SRS_CASTNODE<optimize=false, read=Name.Name>;

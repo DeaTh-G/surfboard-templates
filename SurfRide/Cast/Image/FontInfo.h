@@ -18,4 +18,4 @@ typedef struct{
     { 
         FSeek(FontOffset.offset); SRS_FONT FontList;
     } FSeek(p);
-} SRS_FONT_INFO<optimize=false>;
+} SRS_FONTINFO<optimize=false>;

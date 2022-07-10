@@ -1,33 +1,38 @@
+enum <ushort> GeometryType {
+    Geometry2D,
+    Geometry3D
+};
+
 typedef struct {
     local uint64 p<hidden=true>;
 
     size_t NameOffset;
     StringPtr Name(NameOffset.offset);
-    uint Index;
+    uint ID;
     uint Flags;
     uint CastCount;
     size_t NodeOffset;
-    size_t TransformOffset;
+    size_t CellOffset;
     uint AnimationCount;
     size_t AnimationOffset;
-    uint DefaultAnimationIndex;
+    uint CurrentAnimationIndex;
     size_t UserDataOffset; p = FTell();
     if (CastCount)
     {
         if (NodeOffset.offset)
         {
-            FSeek(NodeOffset.offset); SRS_NODE Casts[CastCount];
+            FSeek(NodeOffset.offset); SRS_CASTNODE Casts[CastCount];
         }
-        if (TransformOffset.offset)
+        if (CellOffset.offset)
         {
-            FSeek(TransformOffset.offset);
+            FSeek(CellOffset.offset);
 
             local int i;
             for (i = 0; i < CastCount; i++)
                 if ((Flags & 0xF) == 1)
-				    SRS_TRS3D Transforms(Casts[i].Name.Name);
+				    SRS_CELL3D Transforms(Casts[i].Name.Name);
                 else
-				    SRS_TRS2D Transforms(Casts[i].Name.Name);
+				    SRS_CELL2D Transforms(Casts[i].Name.Name);
         }
     }
     if (AnimationOffset.offset && AnimationCount)

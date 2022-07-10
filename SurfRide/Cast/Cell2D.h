@@ -10,17 +10,14 @@ typedef struct (string name){
     ubyte field_09;
     ubyte field_0A;
     ubyte field_0B;
-    SRS_VECTOR3 Translation;
+    SRS_VECTOR2 Translation;
     if (VERSION >= 4)
     {
-        SRS_VECTOR3 field_20;
-        SRS_VECTOR3 Scale;
+        SRS_VECTOR3 vector_20;
     }
     else
     {
-        float field_18;
-        float field_1C;
-        uint Rotation; 
-        SRS_VECTOR3 Scale;
+        SRS_VECTOR2 Scale;
+        uint RotationZ; 
     }
-} SRS_TRS3D<optimize=false, read=Name>;
+} SRS_CELL2D<optimize=false, read=Name>;

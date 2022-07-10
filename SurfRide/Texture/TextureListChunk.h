@@ -26,7 +26,7 @@ typedef struct {
     local uint64 o<hidden=true> = FTell();
     local uint64 p<hidden=true>;
 
-    SRS_CHUNK_HEADER Header;
+    SRS_CHUNKHEADER Header;
     uint TexListOffset;
     uint TexListCount; p = FTell();
     if (TexListOffset && TexListCount)

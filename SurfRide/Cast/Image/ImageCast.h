@@ -5,14 +5,14 @@ typedef struct {
     float Width;
     float Height;
     SRS_VECTOR2 PivotPoint;
-    SRS_COLOR GradientTopLeft;
-    SRS_COLOR GradientBottomLeft;
-    SRS_COLOR GradientTopRight;
-    SRS_COLOR GradientBottomRight;
+    SRS_COLOR VertexColorTopLeft;
+    SRS_COLOR VertexColorBottomLeft;
+    SRS_COLOR VertexColorTopRight;
+    SRS_COLOR VertexColorBottomRight;
     short CropIndex0;
     short CropIndex1;
-    ushort CropRef0Count;
-    ushort CropRef1Count;
+    short CropRef0Count;
+    short CropRef1Count;
     size_t CropRef0Offset;
     size_t CropRef1Offset;
     size_t FontInfoOffset;
@@ -28,6 +28,6 @@ typedef struct {
     }
     if (FontInfoOffset.offset)
     {
-        FSeek(FontInfoOffset.offset); SRS_FONT_INFO FontInfo;
+        FSeek(FontInfoOffset.offset); SRS_FONTINFO FontInfo;
     } FSeek(p);
-} SRS_IMAGE_CAST<optimize=false>;
+} SRS_IMAGECAST<optimize=false>;

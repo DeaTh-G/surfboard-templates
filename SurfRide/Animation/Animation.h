@@ -3,8 +3,8 @@ typedef struct {
 
     size_t NameOffset;
     StringPtr Name(NameOffset.offset);
-    uint Index;
-    uint MotionCount;
+    uint ID;
+    int MotionCount;
     uint EndFrame;
     size_t MotionOffset;
     if (VERSION >= 1)

@@ -11,20 +11,24 @@ typedef struct {
     SRS_COLOR GradientBottomRight;
     float field_24;
     float field_28;
-    short field_2C;
-    short field_2E;
+    short SliceHorizontalCount;
+    short SliceVerticalCount;
     short field_30;
     short field_32;
-    short SliceInfoCount;
-    short field_36;
-    size_t SliceInfoOffset;
-    size_t field_3C;
+    short CropRef0Count;
+    short CropRef1Count;
+    size_t CropRef0Offset;
+    size_t CropRef1Offset;
     size_t field_40;
-    SRS_SLICE Slices[field_2C * field_2E];
+    SRS_SLICE Slices[SliceHorizontalCount * SliceVerticalCount];
     
     p = FTell();
-    if (SliceInfoOffset.offset && SliceInfoCount)
+    if (CropRef0Offset.offset && CropRef0Count)
     {
-        FSeek(SliceInfoOffset.offset); SRS_SLICE_INFO SliceInfo[SliceInfoCount];
+        FSeek(CropRef0Offset.offset); SRS_CROPREF CropRef0s[CropRef0Count];
+    } 
+    if (CropRef1Offset.offset && CropRef1Count)
+    {
+        FSeek(CropRef1Offset.offset); SRS_CROPREF CropRef1s[CropRef1Count];
     } FSeek(p);
-} SRS_SLICE_CAST<optimize=false>;
+} SRS_SLICECAST<optimize=false>;

@@ -14,4 +14,4 @@ typedef struct {
     {
         FSeek(LayerOffset.offset); SRS_LAYER Layer;
     } FSeek(p);
-} SRS_REFERENCE_CAST;
+} SRS_REFERENCECAST;

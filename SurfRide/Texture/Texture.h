@@ -16,7 +16,7 @@ typedef struct {
         size_t FileNameOffset;
         StringPtr FileName(FileNameOffset.offset);
     }
-    uint Index;
+    uint ID;
     ushort Width;
     ushort Height;
     uint Flags;

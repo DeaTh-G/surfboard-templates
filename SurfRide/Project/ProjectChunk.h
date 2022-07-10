@@ -3,14 +3,14 @@ typedef struct{
 
     size_t NameOffset;
     StringPtr Name(NameOffset.offset);
-    ushort SceneCount;
+    short SceneCount;
     short field_06;
-    ushort TexListCount;
-    ushort FontCount;
+    short TextureListCount;
+    short FontCount;
     size_t SceneOffset;
-    size_t TexListOffset;
+    size_t TextureListOffset;
     size_t FontOffset;
-    SRS_CAMERA Camera(0);
+    SRS_CAMERA Camera;
     uint StartFrame;
     uint EndFrame;
     if (VERSION >= 1)
@@ -20,9 +20,9 @@ typedef struct{
     {
         FSeek(SceneOffset.offset); SRS_SCENE Scenes[SceneCount];
     }
-    if (TexListOffset.offset && TexListCount);
+    if (TextureListOffset.offset && TextureListCount);
     {
-        FSeek(TexListOffset.offset); SRS_TEXLIST TexLists[TexListCount];
+        FSeek(TextureListOffset.offset); SRS_TEXLIST TexLists[TextureListCount];
     }
     if (FontOffset.offset && FontCount)
     { 
@@ -38,9 +38,9 @@ typedef struct {
     local uint64 o<hidden=true> = FTell();
     local uint64 p<hidden=true>;
     
-    SRS_CHUNK_HEADER Header;
+    SRS_CHUNKHEADER Header;
     uint ProjectOffset;
-    uint field_0C; p = FTell();
+    uint padding<hidden=true>; p = FTell();
     if (ProjectOffset)
     {
         FSeek(o + ProjectOffset); SRS_PROJECT Project;

@@ -1,4 +1,4 @@
-enum <ushort> SRS_CURVE_TYPE
+enum <ushort> SRE_CURVE_TYPE
 {
     Tx,
     Ty,
@@ -49,8 +49,8 @@ enum <ushort> SRS_CURVE_TYPE
 typedef struct {
     local uint64 p<hidden=true>;
 
-    SRS_CURVE_TYPE TrackType;
-    ushort KeyCount;
+    SRE_CURVE_TYPE TrackType;
+    short KeyCount;
     uint Flags;
     uint FirstFrame;
     uint LastFrame;
@@ -60,22 +60,6 @@ typedef struct {
     if (KeyCount && KeyOffset.offset)
     {
         FSeek(KeyOffset.offset);
-        switch (Flags & 3)
-        {
-            case 0:
-                SRS_KEYCONSTANT Keys(Flags)[KeyCount];
-                break;
-            case 1: 
-                SRS_KEYLINEAR Keys(Flags)[KeyCount];
-                break;
-            case 2: 
-                SRS_KEYHERMITE Keys(Flags)[KeyCount];
-                break;
-            case 3: 
-                SRS_KEYINDIVIDUAL Keys(Flags)[KeyCount];
-                break;
-            default:
-                break;
-        }
+        SRS_KEYFRAME KeyFrames(Flags)[KeyCount];
     } FSeek(p);
 } SRS_TRACK<optimize=false>;

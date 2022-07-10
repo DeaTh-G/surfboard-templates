@@ -3,16 +3,16 @@ typedef struct {
 
     size_t NameOffset;
     StringPtr Name(NameOffset.offset);
-    uint Index;
+    uint ID;
     uint Flags;
     if (VERSION >= 4)
         uint field_10;
     uint LayerCount;
     size_t LayerOffset;
-    ushort CameraCount;
-    short DefaultCameraIndex;
+    short CameraCount;
+    short CurrentCameraIndex;
     size_t CameraOffset;
-    SRS_COLOR BackColor;
+    SRS_COLOR BackgroundColor;
     SRS_VECTOR2 Resolution;
     size_t UserDataOffset; p = FTell();
     if (LayerOffset.offset && LayerCount)
@@ -21,7 +21,7 @@ typedef struct {
     }
     if (CameraOffset.offset && CameraCount);
     {
-        FSeek(CameraOffset.offset); SRS_CAMERA Cameras(1)[CameraCount];
+        FSeek(CameraOffset.offset); SRS_CAMERA Cameras[CameraCount];
     }
     if (UserDataOffset.offset)
     {

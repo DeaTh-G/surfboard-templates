@@ -1,8 +1,8 @@
 typedef struct {
 	local uint64 p<hidden=true>;
 
-    ushort CastIndex;
-    ushort TrackCount;
+    ushort CastID;
+    short TrackCount;
     size_t TrackOffset; p = FTell();
     if (TrackCount && TrackOffset.offset)
     {

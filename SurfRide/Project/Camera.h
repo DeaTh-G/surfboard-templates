@@ -1,4 +1,4 @@
-typedef struct (uint parent) {
+typedef struct {
     if (VERSION >= 1)
     {
         size_t NameOffset;
@@ -9,9 +9,9 @@ typedef struct (uint parent) {
     SRS_VECTOR3 Target;
     if (VERSION >= 4)
         int field_38;
-    uint FovY;
-    float ZNear;
-    float ZFar;
+    uint Flags;
+    float NearPlane;
+    float FarPlane;
     if (VERSION >= 1)
     {
         size_t field_2C;
