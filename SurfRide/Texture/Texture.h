@@ -23,9 +23,9 @@ typedef struct {
     uint RectangleCount;
     size_t RectangleOffset;
     size_t UserDataOffset; p = FTell();
-    if (CropOffset.offset && CropCount)
+    if (RectangleOffset.offset && RectangleCount)
     {
-        FSeek(CropOffset.offset); SRS_RECTANGLE Rectangles[CropCount];
+        FSeek(RectangleOffset.offset); SRS_RECTANGLE Rectangles[RectangleCount];
     }
     if (UserDataOffset.offset)
     {
