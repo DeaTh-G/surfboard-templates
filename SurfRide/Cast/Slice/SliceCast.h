@@ -5,10 +5,10 @@ typedef struct {
     float Width;
     float Height;
     SRS_VECTOR2 AnchorPoint;
-    SRS_COLOR GradientTopLeft;
-    SRS_COLOR GradientBottomLeft;
-    SRS_COLOR GradientTopRight;
-    SRS_COLOR GradientBottomRight;
+    SRS_COLOR VertexColorTopLeft;
+    SRS_COLOR VertexColorBottomLeft;
+    SRS_COLOR VertexColorTopRight;
+    SRS_COLOR VertexColorBottomRight;
     float field_24;
     float field_28;
     short SliceHorizontalCount;

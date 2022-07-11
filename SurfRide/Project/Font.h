@@ -2,7 +2,7 @@ typedef struct {
     ushort Character;
     short TextureListIndex;
     short TextureIndex;
-    short SpriteIndex;
+    short CropIndex;
 } SRS_CHARACTER_MAPPING<optimize=false, read=Str("%c", Character)>;
 
 typedef struct {

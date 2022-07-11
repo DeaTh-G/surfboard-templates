@@ -1,11 +1,8 @@
 typedef struct (string name){
     local string Name = name;
 
-    SRS_COLOR Color;
-    ubyte field_04;
-    ubyte field_05;
-    ubyte field_06;
-    ubyte field_07;
+    SRS_COLOR MaterialColor;
+    SRS_COLOR IlluminationColor;
     ubyte field_08;
     ubyte field_09;
     ubyte field_0A;

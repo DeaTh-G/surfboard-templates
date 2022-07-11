@@ -4,10 +4,8 @@ typedef struct {
     local uint64 p<hidden=true>;
     
     size_t LayerOffset;
-    uint field_04;
-    uint field_08;
-    uint field_0C;
-    uint field_10;
+    size_t field_04;
+    size_t field_08;
     
     p = FTell();
     if (LayerOffset.offset)

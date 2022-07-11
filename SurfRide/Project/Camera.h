@@ -8,7 +8,7 @@ typedef struct {
     SRS_VECTOR3 Position;
     SRS_VECTOR3 Target;
     if (VERSION >= 4)
-        int field_38;
+        int field_30;
     uint Flags;
     float NearPlane;
     float FarPlane;

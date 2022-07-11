@@ -16,8 +16,8 @@ typedef struct {
     size_t CropRef0Offset;
     size_t CropRef1Offset;
     size_t FontInfoOffset;
-    size_t field_3C;
-    size_t field_40; p = FTell();
+    size_t field_38;
+    size_t field_3C; p = FTell();
     if (CropRef0Count && CropRef0Offset.offset)
     {
         FSeek(CropRef0Offset.offset); SRS_CROPREF CropRef0s[CropRef0Count];

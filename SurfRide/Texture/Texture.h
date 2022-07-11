@@ -20,12 +20,12 @@ typedef struct {
     ushort Width;
     ushort Height;
     uint Flags;
-    uint CropCount;
-    size_t CropOffset;
+    uint RectangleCount;
+    size_t RectangleOffset;
     size_t UserDataOffset; p = FTell();
     if (CropOffset.offset && CropCount)
     {
-        FSeek(CropOffset.offset); SRS_RECTANGLE Crops[CropCount];
+        FSeek(CropOffset.offset); SRS_RECTANGLE Rectangles[CropCount];
     }
     if (UserDataOffset.offset)
     {
