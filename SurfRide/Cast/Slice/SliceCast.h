@@ -2,19 +2,18 @@ typedef struct {
     local uint64 p<hidden=true>;
     
     uint Flags;
-    float Width;
-    float Height;
+    SRS_VECTOR2 Size;
     SRS_VECTOR2 PivotPoint;
     SRS_COLOR VertexColorTopLeft;
     SRS_COLOR VertexColorBottomLeft;
     SRS_COLOR VertexColorTopRight;
     SRS_COLOR VertexColorBottomRight;
-    float field_24;
-    float field_28;
+    float HorizontalFixedSize;
+    float VerticalFixedSize;
     short SliceHorizontalCount;
     short SliceVerticalCount;
-    short field_30;
-    short field_32;
+    short HorizontalFixedCount;
+    short VerticalFixedCount;
     short CropRef0Count;
     short CropRef1Count;
     size_t CropRef0Offset;

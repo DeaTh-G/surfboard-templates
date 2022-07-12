@@ -2,8 +2,7 @@ typedef struct {
     local uint64 p<hidden=true>;
 
     uint Flags;
-    float Width;
-    float Height;
+    SRS_VECTOR2 Size;
     SRS_VECTOR2 PivotPoint;
     SRS_COLOR VertexColorTopLeft;
     SRS_COLOR VertexColorBottomLeft;
