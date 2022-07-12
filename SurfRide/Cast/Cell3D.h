@@ -8,16 +8,6 @@ typedef struct (string name){
     ubyte field_0A;
     ubyte field_0B;
     SRS_VECTOR3 Translation;
-    if (VERSION >= 4)
-    {
-        SRS_VECTOR3 field_20;
-        SRS_VECTOR3 Scale;
-    }
-    else
-    {
-        float field_18;
-        float field_1C;
-        uint Rotation; 
-        SRS_VECTOR3 Scale;
-    }
+    SRS_INTVECTOR3 Rotation;
+    SRS_VECTOR3 Scale;
 } SRS_CELL3D<optimize=false, read=Name>;

@@ -22,3 +22,22 @@ typedef struct {
         float W;
 } SRS_VECTOR3<optimize=false,
     read=Str("[%1.2f, %1.2f, %1.2f]", X, Y, Z)>;
+
+typedef struct {
+    if (VERSION >= 4)
+    {
+        if (FTell() % 16 != 0)
+            FSkip(16 - (FTell() % 16));
+    }
+    else
+    {
+        if (FTell() % 4 != 0)
+            FSkip(4 - (FTell() % 4));
+    }
+    int X;
+    int Y;
+    int Z;
+    if (VERSION >= 4)
+        int W;
+} SRS_INTVECTOR3<optimize=false,
+    read=Str("[%d, %d, %d]", X, Y, Z)>;
