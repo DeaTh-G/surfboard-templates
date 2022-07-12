@@ -8,5 +8,6 @@ typedef struct {
     SRS_COLOR VertexColorBottomLeft;
     SRS_COLOR VertexColorTopRight;
     SRS_COLOR VertexColorBottomRight;
-    uint SliceIndex;
+    short CropIndex0;
+    short CropIndex1;
 } SRS_SLICE<optimize=false, read=Str("[%d, %d]", FixedWidth, FixedHeight)>;

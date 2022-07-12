@@ -4,7 +4,7 @@ typedef struct {
     uint Flags;
     float Width;
     float Height;
-    SRS_VECTOR2 AnchorPoint;
+    SRS_VECTOR2 PivotPoint;
     SRS_COLOR VertexColorTopLeft;
     SRS_COLOR VertexColorBottomLeft;
     SRS_COLOR VertexColorTopRight;
