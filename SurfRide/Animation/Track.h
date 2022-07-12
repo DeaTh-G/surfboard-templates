@@ -62,4 +62,4 @@ typedef struct {
         FSeek(KeyOffset.offset);
         SRS_KEYFRAME KeyFrames(Flags)[KeyCount];
     } FSeek(p);
-} SRS_TRACK<optimize=false>;
+} SRS_TRACK<optimize=false, read=Str(EnumToString(TrackType))>;
