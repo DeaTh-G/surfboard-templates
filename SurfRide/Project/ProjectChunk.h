@@ -22,7 +22,7 @@ typedef struct{
     }
     if (TextureListOffset.offset && TextureListCount);
     {
-        FSeek(TextureListOffset.offset); SRS_TEXLIST TexLists[TextureListCount];
+        FSeek(TextureListOffset.offset); SRS_TEXTURELIST TextureLists[TextureListCount];
     }
     if (FontOffset.offset && FontCount)
     { 

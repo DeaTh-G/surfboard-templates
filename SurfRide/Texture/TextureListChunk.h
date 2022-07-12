@@ -20,17 +20,17 @@ typedef struct {
     {
         FSeek(UserDataOffset.offset); SRS_USERDATA UserData;
     } FSeek(p); 
-} SRS_TEXLIST<optimize=false, read=Name.Name>;
+} SRS_TEXTURELIST<optimize=false, read=Name.Name>;
 
 typedef struct {
     local uint64 o<hidden=true> = FTell();
     local uint64 p<hidden=true>;
 
     SRS_CHUNKHEADER Header;
-    uint TexListOffset;
-    uint TexListCount; p = FTell();
-    if (TexListOffset && TexListCount)
+    uint TextureListOffset;
+    uint TextureListCount; p = FTell();
+    if (TextureListOffset && TextureListCount)
     { 
-        FSeek(o + TexListOffset); SRS_TEXLIST TexLists[TexListCount];
+        FSeek(o + TextureListOffset); SRS_TEXTURELIST TextureLists[TextureListCount];
     }
 } SRS_TEXTURELIST_CHUNK<bgcolor=0x006AFF>;

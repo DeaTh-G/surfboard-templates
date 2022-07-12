@@ -3,7 +3,7 @@ typedef struct {
     float Top;
     float Right;
     float Bottom;
-} SRS_RECTANGLE<optimize=false, bgcolor=0xFFFF00,
+} SRS_CROP<optimize=false, bgcolor=0xFFFF00,
     read=Str("[%f, %f, %f, %f]", Left, Top, Right, Bottom)>;
 
 typedef struct {
@@ -20,12 +20,12 @@ typedef struct {
     ushort Width;
     ushort Height;
     uint Flags;
-    uint RectangleCount;
-    size_t RectangleOffset;
+    uint CropCount;
+    size_t CropOffset;
     size_t UserDataOffset; p = FTell();
-    if (RectangleOffset.offset && RectangleCount)
+    if (CropOffset.offset && CropCount)
     {
-        FSeek(RectangleOffset.offset); SRS_RECTANGLE Rectangles[RectangleCount];
+        FSeek(CropOffset.offset); SRS_CROP Crops[CropCount];
     }
     if (UserDataOffset.offset)
     {
