@@ -5,8 +5,8 @@ typedef struct {
     
     size_t LayerOffset;
     int field_04;
-    int field_08;
-    int field_0C;
+    int AnimationID;
+    int AnimationFrame;
     int field_10;
     
     p = FTell();
