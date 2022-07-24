@@ -18,7 +18,7 @@ typedef struct {
     short CropRef1Count;
     size_t CropRef0Offset;
     size_t CropRef1Offset;
-    size_t field_40;
+    size_t EffectOffset;
     SRS_SLICE Slices[SliceHorizontalCount * SliceVerticalCount];
     
     p = FTell();
