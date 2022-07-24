@@ -1,7 +1,7 @@
 typedef struct{
     local uint64 p<hidden=true>;
 
-    uint field_00;
+    uint Flags;
     uint FontIndex;
     size_t TextOffset;
     SRS_VECTOR2 Scale;
