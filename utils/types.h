@@ -19,3 +19,5 @@ typedef struct {
     
     value = offset;
 } size_t<read=offset>;
+
+typedef char bool;
