@@ -30,9 +30,9 @@ typedef struct {
             local int i;
             for (i = 0; i < CastCount; i++)
                 if ((Flags & 0xF) == 1)
-				    SRS_CELL3D Cells(Casts[i].Name.Name);
+				    SRS_TRS3D Transform3D(Casts[i].Name.Name);
                 else
-				    SRS_CELL2D Cells(Casts[i].Name.Name);
+				    SRS_TRS2D Transform2D(Casts[i].Name.Name);
         }
     }
     if (AnimationOffset.offset && AnimationCount)
