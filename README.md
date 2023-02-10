@@ -1,7 +1,7 @@
 # swif-template
 010 Editor templates for various versions of the `Surfride Draw Project (*.swif)` file format used primarily in Hedgehog Engine games.
 The format made its first appearance in `Mario and Sonic at the London 2012 Olympic Games` developed by `Sega Sports R&D` in 2011.
-It's the successor to SEGA's in-house `Ninja` library's GUI `Cell Sprite Draw` format, more commonly known as `Ninja Chao Project *.[gsxy]ncp` used in games until 2011's `Sonic Generations`.
+It's the successor to SEGA's in-house `Ninja` library's GUI `Cell Sprite Draw` format, more commonly known as `Ninja CSD Project *.[gsxy]ncp` used in games until 2011's `Sonic Generations`.
  
 ## Supported Versions
 ### SWIFv1 - 32bit
