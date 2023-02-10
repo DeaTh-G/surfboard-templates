@@ -1,7 +1,7 @@
 # swif-template
 010 Editor templates for various versions of the `Surfride Draw Project (*.swif)` file format used primarily in Hedgehog Engine games.
 The format made its first appearance in `Mario and Sonic at the London 2012 Olympic Games` developed by `Sega Sports R&D` in 2011.
-It's the successor to SEGA's in-house `Ninja` library's GUI format used in games until 2011's `Sonic Generations`.
+It's the successor to SEGA's in-house `Ninja` library's GUI `Cell Sprite Draw` format, more commonly known as \*.[gsxy]ncp (Ninja Chao Project) used in games until 2011's `Sonic Generations`.
  
 ## Supported Versions
 ### SWIFv1 - 32bit
@@ -35,4 +35,11 @@ It's the successor to SEGA's in-house `Ninja` library's GUI format used in games
 #### ・rangers - Sonic Frontiers (Nintendo Switch, PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Serias S/X)
 
 # swtd-template
-There's nothing here yet...
+`SurfRide Draw Texture Data (*.swtd)` is a seemingly defunct format used alongside early iterations of `Surfride Draw Project` files.
+The latest it has been seen is in releases of Puyo Puyo Tetris.
+
+# sbb-template
+`SurfBoard Binary (*.sbb)` is a seemingly defunct format found in entries in the `Ryu ga Gotoka` series of games using the `Old Engine`. SurfBoard has seemingly been abandoned by the studio, as games running on the `Dragon Engine` do not use the format anymore.
+
+# Other versions
+`(*.sbcene)`, `(*.srd)`, `(*.svo)` are formats used by `Chunithm Card Maker` made in Unity. The formats are not very well researched.
