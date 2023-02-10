@@ -14,13 +14,13 @@ It's the successor to SEGA's in-house `Ninja` library's GUI `Cell Sprite Draw` f
 ### SWIFv3
 #### ・sonic2013 - Sonic Lost World (Nintendo Wii U, PC)
 #### ・urals - Mario and Sonic at the Sochi 2014 Olympic Winter Games (Nintendo Wii U)
-#### ・tenpplus - Puyo Puyo Tetris (Nintendo 3DS, Nintendo Wii U, PlayStation 3)
+#### ・tenpplus - Puyo Puyo Tetris (Nintendo 3DS, Nintendo Wii U, PlayStation 3, PlayStation Vita)
 #### ・unison - Mario and Sonic at the Rio 2016 Olympic Games (Nintendo Wii U)
 #### ・sergio - Mario and Sonic at the Rio 2016 Olympic Games (Nintendo 3DS)
 #### ・AD24 - Puyo Puyo Chronicle (Nintendo 3DS)
 
 ### SWIFv4 - 64bit
-#### ・tenpplus - Puyo Puyo Tetris (Nintendo Switch, PC, PlayStation 4, PlayStation Vita?, Xbox One)
+#### ・tenpplus - Puyo Puyo Tetris (Nintendo Switch, PC, PlayStation 4, Xbox One)
 #### ・es24 - Puyo Puyo Champions (Nintendo Switch, PC, PlayStation 4, Xbox One)
 
 ### SWIFv5
