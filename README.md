@@ -39,7 +39,7 @@ It's the successor to SEGA's in-house `Ninja` library's GUI `Cell Sprite Draw` f
 The latest it has been seen is in releases of Puyo Puyo Tetris.
 
 # sbb-template
-`SurfBoard Binary (*.sbb)` is a seemingly defunct format found in entries in the `Ryu ga Gotoka` series of games using the `Old Engine`. SurfBoard has seemingly been abandoned by the studio, as games running on the `Dragon Engine` do not use the format anymore.
+`SurfBoard Binary (*.sbb)` is a seemingly defunct format found in entries in the `Ryu ga Gotoku` series of games using the `Old Engine`. SurfBoard has seemingly been abandoned by the studio, as games running on the `Dragon Engine` do not use the format anymore.
 
 # Other versions
 `(*.sbcene)`, `(*.srd)`, `(*.svo)` are formats used by `Chunithm Card Maker` made in Unity. The formats are not very well researched.
