@@ -37,9 +37,11 @@ It's the successor to SEGA's in-house `Ninja` library's GUI `Cell Sprite Draw` f
 # swtd-template
 `SurfRide Draw Texture Data (*.swtd)` is a seemingly defunct format used alongside early iterations of `Surfride Draw Project` files.
 The latest it has been seen is in releases of Puyo Puyo Tetris.
+There is currently no templates available for these, nor is it actively researched at the moment.
 
 # sbb-template
 `SurfBoard Binary (*.sbb)` is a seemingly defunct format found in entries in the `Ryu ga Gotoku` series of games using the `Old Engine`. SurfBoard has seemingly been abandoned by the studio, as games running on the `Dragon Engine` do not use the format anymore.
+There is currently no templates available for these, nor is it actively researched at the moment.
 
 # Other versions
 `(*.sbcene)`, `(*.srd)`, `(*.svo)` are formats used by `Chunithm Card Maker` made in Unity. The formats are not very well researched.
