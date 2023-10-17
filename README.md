@@ -33,6 +33,8 @@ It's the successor to SEGA's in-house `Ninja` library's GUI `Cell Sprite Draw` f
 #### ・tenpex - Puyo Puyo Tetris 2 (Nintendo Switch, PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series S/X)
 #### ・hite/hiteplus - Sonic Origins/Sonic Origins Plus (Nintendo Switch, PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series S/X)
 #### ・rangers - Sonic Frontiers (Nintendo Switch, PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series S/X)
+#### ・rangers_artbook - Sonic Frontiers Digital Art Book with Mini Digital Soundtrack (Nintendo Switch, PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series S/X)
+#### ・orion_artbook - Sonic Superstars Digital Artbook and mini-OST (Nintendo Switch, PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series S/X)
 
 # swtd-template
 `SurfRide Draw Texture Data (*.swtd)` is a seemingly defunct format used alongside early iterations of `Surfride Draw Project` files.
